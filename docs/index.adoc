@@ -37,7 +37,7 @@ include::rulesandexams.adoc[]
 
 include::references.adoc[]
 
-[background-video="videos/thegeneral.mp4",background-video-loop="true",background-video-muted="true",background-opacity="1.0"]
+[background-video="videos/thegeneral.mp4",background-video-loop="false",background-video-muted="true",background-opacity="1.0"]
 == [white]*FIN?*
 
 [pass]
