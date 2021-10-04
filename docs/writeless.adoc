@@ -14,11 +14,14 @@ What is not written can't be wrong.
 
 [.notes]
 --
+* Sit on your hands, anyone?
 * The less you write the less you err.
 * Always be critical.
 * A by-the-book solution might not be the best for your case.
 --
 
+[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[transition="zoom-in fade-out"]
 === Model right
 
 * Use the proper modeling tool/technique.
@@ -30,6 +33,8 @@ What is not written can't be wrong.
 * Choosing the proper diagram or paradigm is hard, but necessary.
 --
 
+[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[transition="zoom-in fade-out"]
 === Do not [red]*over model*
 
 * In many applications [green]*one* data model (the ER-model) suffices.
@@ -46,6 +51,8 @@ What is not written can't be wrong.
 --
 
 
+[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[transition="zoom-in fade-out"]
 === Model the machine instead
 
 * Put the modeling effort in the machine.
@@ -56,4 +63,21 @@ What is not written can't be wrong.
 --
 * Effort can be focus on identifying the opportunities for patterns +
  Or Non Functional requirements like test-ability. (Layered design).
+--
+
+[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[transition="zoom-in fade-out"]
+=== Advise from the industry
+
+. make the requirements less dumb
+. try and delete part of the process/product
+. simplify or optimize
+. accelerate cycle time
+. automate
+
+Elon Musk.
+
+[.notes]
+--
+Use every opportunity to remove code.
 --

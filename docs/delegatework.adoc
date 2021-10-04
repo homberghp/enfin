@@ -1,20 +1,21 @@
 [.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
 == Delegate work
 
-* There might be some(one|thing) or layer that can do it.
-* Move work to another layer.
-* Most of the CRUD code can be done by the database.
+* There might be some(one|thing) or layer that can do the work.
+* Move the work to that layer.
 
 [.notes]
 --
 * Of many applications, 90 to 95 % of the operations is CRUD. Most of it (including translating to and from json) can be done by the database.
+* Most of the CRUD business code can be done by the database,
+like updating multiple tables, computing intermediate values etc
 --
 
 [.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Good Code
 
-* Writing the whole application in Java is not the holy grail.
-** Writing less code is.
+* Writing the [green]_whole_ application in Java is [red]*not* the holy grail.
+* Writing [green]*fewer code lines is*.
 
 [.notes]
 --
@@ -51,11 +52,15 @@ useless transformations, e.g. from db to pojo to json if the database can do jso
 [.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Benefits of reduced work
 
-* If a lot is done in the database layer, choosing another language for middle-ware of front-end becomes trivial.
+If most work is done in the database layer, +
+choosing another language for middle-ware or front-end +
+becomes trivial.
 
 [.notes]
 --
 * The smaller a component, the easier replaced.
+* Most database functionality can be written in a declarative style (sql),
+with lots of opportunities to optimize.
 --
 
 // === Delegating example

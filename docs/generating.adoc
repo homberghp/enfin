@@ -46,7 +46,8 @@ CREATE TABLE employees (
 ) WITHOUT oids;
 ----
 
-=== equivalent java record
+
+=== equivalent java record, this is trivial to generate.
 [source,java]
 ----
 record Employee( Integer employeeid, String lastName) {

@@ -20,6 +20,7 @@ body {
   background: -ms-radial-gradient(center, circle cover, #fff 0%, #ffcea3 100%);
   background: radial-gradient(center, circle cover, #fff 0%, #ffcea3 100%);
   background-color: #ffcea3;
+
 }
 /* .backgrounds {  opacity: 0.6; } */
 
@@ -46,7 +47,7 @@ SECTION.bonuscontent H2::before {
 }
 
 SECTION .title {
-  font-family: sans-serif;/*"Quicksand", sans-serif;*/
+  font-family: "Quicksand", sans-serif;*/
   font-weight: bold;
   text-decoration: underline;
   line-height: 1em;
@@ -468,3 +469,4 @@ span.green{ color:#080;}
 
 .red{color:#800;}
 .green{color:#080;}
+h2 {letter-spacing: .3rem;}
