@@ -46,7 +46,7 @@ SECTION.bonuscontent H2::before {
 }
 
 SECTION .title {
-  font-family: "Quicksand", sans-serif;
+  font-family: sans-serif;/*"Quicksand", sans-serif;*/
   font-weight: bold;
   text-decoration: underline;
   line-height: 1em;
@@ -465,3 +465,5 @@ span.green{ color:#080;}
   font-weight: 600;
 
 } */
+
+.red{color:#800;}

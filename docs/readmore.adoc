@@ -2,7 +2,7 @@
 == Read more code
 
 [.lightbg,background-video="videos/woman-study.mp4",background-video-loop="true",background-opacity="0.7"]
-=== The importance of reading code and readability.
+=== The importance of reading code.
 
 [quote, Martin Fowler, Refactoring]
 Any fool can write code that a computer can understand. +
@@ -15,19 +15,42 @@ Good programmers write code that humans can understand.
 * The naming problem. Good type (class) and method names are a boon to readability.
 --
 
+[.lightbg,background-video="videos/woman-study.mp4",background-video-loop="true",background-opacity="0.7"]
 === Collect good examples
 
 [.notes]
 --
 * even home brew, if the can withstand some scrutiny
+--
+
+[.lightbg,background-video="videos/woman-study.mp4",background-video-loop="true",background-opacity="0.7"]
+=== Study good examples
+--
 *  and present to the students to study, maybe as part of a bigger exercise. Reading a lot makes a better writer, also for code.
 --
 
-=== Homework should not be just writing programs
+[.lightbg,background-video="videos/woman-study.mp4",background-video-loop="true",background-opacity="0.7"]
+[transition="fade-out"]
+=== Not only writing
+
+* Coding is not only writing.
+* It is studying how elements can be combined: reading.
 
 [.notes]
 --
+* about homework
 * Good code is understandable code, by virtue of the names used and the easy to understand constructs.
+--
+
+[.lightbg,background-video="videos/woman-study.mp4",background-video-loop="true",background-opacity="0.7"]
+[transition="fade-in"]
+=== Quality
+
+* Code duplication by copy and waste makes a boring read.
+* Review often, because (unit) testing is blind for writing style.
+
+[.notes]
+--
 * Another reason to avoid *code duplication or copy and waste*: all that copied code has to be read too, which is
   both boring and a waste of reading time.
 * Review code, in particular or readability, not just on functional correctness.

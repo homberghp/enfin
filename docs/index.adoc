@@ -21,3 +21,9 @@ include::commonhead.adoc[]
 ----
 
 include::readmore.adoc[]
+
+include::testmore.adoc[]
+
+include::writeless.adoc[]
+
+include::delegatework.adoc[]
