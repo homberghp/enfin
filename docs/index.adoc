@@ -1,6 +1,13 @@
-= My final ruminations
+= Enfin
+include::commonhead.adoc[]
+
 
 == Agenda
 
 * No surprise here
 * topic
+
+[.notes]
+----
+* Notes here
+----
