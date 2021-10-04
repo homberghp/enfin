@@ -57,7 +57,7 @@ Eine Prüfung ohne Aufsicht is keine
 --
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
-=== Practices to be avoided
+=== Practices to be [red]#avoided#
 
 * [red]*BYOD* **B**ring **Y**our **O**wn **D**evice for exam, +
   unless explicitly controlled by proctor.
@@ -89,13 +89,16 @@ Eine Prüfung ohne Aufsicht is keine
 
 Exams are very expensive.
 
-Make Producing exams cheap so you can take them out of the normal cadence.
+* Make Producing and taking exams [green]*cheap* +
+ so you can take them out of the normal cycle.
+* take an exam when a main topic is complete.
+* More frequent exams increase study efficiency.
 
 [.notes]
 --
-* Allows for taking smaller (partial) exams, with higher frequency, which help effective studying.
-* Passing all partials automatically passes the full exam.
-* If exams in course programs are spread out over the academic year an exam lab will be very cost effective.
-* Exams can be taken all days, on registrations.
-* Limit the number of retakes per period to discourage *let's try unprepared*.
+Allows for taking smaller (partial) exams, with higher frequency, which help effective studying. +
+Passing all partials automatically passes the full exam. +
+If exams in course programs are spread out over the academic year an exam lab will be very cost effective. +
+Exams can be taken all days, on registrations. +
+Limit the number of retakes per period to discourage *let's try unprepared*.
 --
