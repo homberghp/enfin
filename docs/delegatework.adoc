@@ -1,4 +1,4 @@
-[.lightbg,background-video="videos/sky.mov",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
 == Delegate work
 
 * There might be some(one|thing) or layer that can do it.
@@ -9,6 +9,10 @@
 --
 * Of many applications, 90 to 95 % of the operations is CRUD. Most of it (including translating to and from json) can be done by the database.
 --
+
+=== Good Code
+
+
 
 === Example JSON
 
