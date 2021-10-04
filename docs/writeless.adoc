@@ -32,9 +32,10 @@ What is not written can't be wrong.
 
 === Do not [red]*over model*
 
-* In many applications a data model (ERD) suffices.
+* In many applications [green]*one* data model (the ER-model) suffices.
 * Making a object model (e.g. POJO) is often superfluous, and only adds complexity and work.
 * Modeling inheritance is [red]*useless*, because it will [red]*not survive the transformations*.
+* Use composition a.k.a. views to get the data fit for a use case.
 
 [.notes]
 --
@@ -42,4 +43,17 @@ What is not written can't be wrong.
 * Use one source of truth. Most of the time start with the data (sausage).
 * Useless transformations have no business value, but only cost, if not programmers work then cpu cycles = energy.
 * The other layer may very well not support classes (JSON, sql) and inheritance. In those layers it is just data. Do not make more of it.
+--
+
+
+=== Model the machine instead
+
+* Put the modeling effort in the machine.
+* In many cases the machine can be designed using well known patterns.
+* Actually all frameworks are chock-full of patterns.
+
+[.notes]
+--
+* Effort can be focus on identifying the opportunities for patterns +
+ Or Non Functional requirements like test-ability. (Layered design).
 --
