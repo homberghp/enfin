@@ -34,7 +34,7 @@ they can help measure the degree of done.
 --
 
 [.decentlightbg,background-video="videos/flowers.mp4",background-video-loop="true",background-opacity="0.6"]
-=== Tests Document
+=== Testing Documents
 
 * A well written test is the easiest way to document how an API
  is to be used, including [red]*pre*- and post-conditions.
@@ -64,7 +64,7 @@ they can help measure the degree of done.
 --
 
 [.decentlightbg,background-video="videos/flowers.mp4",background-video-loop="true",background-opacity="0.6"]
-[.degrade,transition="convex-out"]
+[.degrade,transition="concave-in"]
 === Example
 
 [source,java]
