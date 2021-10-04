@@ -8,6 +8,8 @@
 :revealjs_customtheme: css/sky.css
 //:revealjs_autoSlide: 5000
 :revealjs_history: true
+:title-slide-background-image: images/Campus.png
+:title-slide-background-opacity: 50%
 // :title-slide-background-video: videos/thegeneral.mp4
 // :title-slide-background-video-loop: true
 // :title-slide-background-video-muted: true
@@ -29,6 +31,7 @@
 //:revealjs_transitionSpeed: fast
 // :revealjs_parallaxBackgroundImage: images/background-landscape-light-blue.jpg
 // :revealjs_parallaxBackgroundSize: 4936px 2092px
+// :imagesdir: images
 :customcss: css/presentation.css
 //:imagesdir: images
 :source-highlighter: highlightjs

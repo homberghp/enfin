@@ -44,10 +44,11 @@ Good programmers write code that humans can understand.
 
 [.lightbg,background-video="videos/woman-study.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="fade-in"]
-=== Quality
+=== It's about Quality
 
 * Code duplication by copy and waste makes a boring read.
 * Review often, because (unit) testing is blind for writing style.
+* Readable code is correct most of the time.
 
 [.notes]
 --

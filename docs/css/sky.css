@@ -59,7 +59,7 @@ span.green{ color:#080;}
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  letter-spacing: -0.08em;
+  /* letter-spacing: -0.08em; */
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }

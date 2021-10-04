@@ -1,18 +1,21 @@
+[background-image="images/Campus.png"]
 = Enfin
 include::commonhead.adoc[]
 
 
+[.lightbg,background-video="videos/relaxing.mp4",background-video-loop="true",background-video-muted="true",background-opacity="1.0"]
 == Agenda
 
 * No surprise here
-* topic
+* topics: Testing,
+* In general less or more?
 
 [.notes]
 --
 * Notes here
 --
 
-
+[.lightbg,background-video="videos/relaxing.mp4",background-video-loop="true",background-video-muted="true",background-opacity="1.0"]
 === Warning
 
 [source,java]
@@ -27,3 +30,16 @@ include::testmore.adoc[]
 include::writeless.adoc[]
 
 include::delegatework.adoc[]
+
+include::teaching.adoc[]
+
+include::rulesandexams.adoc[]
+
+[pass]
+++++
+<script>
+Reveal.initialize({
+	autoPlayMedia: true
+})
+</script>
+++++

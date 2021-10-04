@@ -12,16 +12,16 @@ like updating multiple tables, computing intermediate values etc
 --
 
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
-=== Good Code
+=== [blue]*Cool* Code
 
 * Writing the [green]_whole_ application in Java is [red]*not* the holy grail.
-* Writing [green]*fewer code lines is*.
+* Writing [green]*fewer code lines* is.
 
 [.notes]
 --
 * Good software engineering leads to less code, not more.
-* Choosing the right place to solve a problem helps a lot.
-* You need to know your paradigms and
+* Choosing the right place/layer to solve the problem helps a lot.
+* You need to know your paradigms.
 --
 
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
@@ -29,7 +29,7 @@ like updating multiple tables, computing intermediate values etc
 
 * The database can produce a JSON result, if nicely asked.
 * The database can also accept JSON.
-* This avoid useless transformations.
+* This helps avoid useless transformations.
 
 [.notes]
 --
@@ -40,19 +40,19 @@ like updating multiple tables, computing intermediate values etc
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Example JSON cont'd
 
-* Role of middle-ware is either short-circuit db and front-end
+* Role of middle-ware is then a short-circuit between db and front-end layers.
 
 [.notes]
 --
-* the middle-ware's role is reduced to transforming to and from formats the database can't provide, but be aware of
-useless transformations, e.g. from db to pojo to json if the database can do json already.
+* The middle-ware's role is reduced to transforming to and from formats the database can't provide (which are few).
+* be aware of useless transformations, e.g. from db to pojo to json if the database can do json already.
 * If the front end consumes json, then have the database produce it.
 --
 
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Benefits of reduced work
 
-If most work is done in the database layer, +
+If most work is done in the e.g. the database layer, +
 choosing another language for middle-ware or front-end +
 becomes trivial.
 
@@ -60,32 +60,35 @@ becomes trivial.
 --
 * The smaller a component, the easier replaced.
 * Most database functionality can be written in a declarative style (sql),
-with lots of opportunities to optimize.
+  with lots of opportunities to optimize.
 --
 
-// === Delegating example
-//
-// .sql statement taking 4 parameters
-// [source,sql]
-// ----
-// with inp as (
-//          select ?::date start_reservation,?::date end_reservation, ?::integer as item_id, ?::integer as customer_id
-//      ),
-//      validres as (
-//          select start_reservation cstart_reservation, greatest(start_reservation+1,end_reservation) cend_reservation
-//           from inp
-//      ),
-//      cost as (
-//           select item_cost_per_day*(cend_reservation - cstart_reservation) rcost
-//           from validres,rental_items join inp on (inp.item_id=rental_items.item_id)
-//      ),
-//      makeres as (
-//           insert into reservations (during, item_id, for_customer,reservation_cost)
-//           select daterange(cstart_reservation,cend_reservation), item_id, customer_id, rcost
-//           from inp,validres,cost
-//           returning  *
-//   )
-//   -- final update to customer credit
-//   update customers set credit=credit-(select reservation_cost from makeres) where customer_id=(select customer_id  from inp)
-//        returning *
-// ----
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
+=== Delegating example
+
+[source,sql]
+[.small-code-font]
+----
+with inp as (
+         select ?::date start_reservation,?::date end_reservation, ?::integer as item_id, ?::integer as customer_id
+     ),
+     validres as (
+         select start_reservation cstart_reservation, greatest(start_reservation+1,end_reservation) cend_reservation
+          from inp
+     ),
+     cost as (
+          select item_cost_per_day*(cend_reservation - cstart_reservation) rcost
+          from validres,rental_items join inp on (inp.item_id=rental_items.item_id)
+     ),
+     makeres as (
+          insert into reservations (during, item_id, for_customer,reservation_cost)
+          select daterange(cstart_reservation,cend_reservation), item_id, customer_id, rcost
+          from inp,validres,cost
+          returning  *
+  )
+  -- final update to customer credit
+  update customers set credit=credit-(select reservation_cost from makeres) where customer_id=(select customer_id  from inp)
+       returning *
+----
+
+The above is the whole use case in one transaction.

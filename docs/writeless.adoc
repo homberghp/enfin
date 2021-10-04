@@ -1,4 +1,4 @@
-[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[background-image="images/manuscript.jpg",background-opacity="0.7"]
 == Write less
 
 [quote]
@@ -65,7 +65,8 @@ What is not written can't be wrong.
  Or Non Functional requirements like test-ability. (Layered design).
 --
 
-[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
+//[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[background-image="images/starbase.jpg",background-opacity="0.3"]
 [transition="zoom-in fade-out"]
 === Advise from the industry
 
