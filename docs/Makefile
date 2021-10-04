@@ -9,7 +9,7 @@ all: index.html
              -a revealjsdir=reveal.js \
              $<
 
-index.html: index.adoc css/*.css readmore.adoc # hardproblems.adoc rules.adoc teaching.adoc badpractices.adoc
+index.html: index.adoc css/*.css *.adoc # hardproblems.adoc rules.adoc teaching.adoc badpractices.adoc
 
 clean:
 	rm -f index.html

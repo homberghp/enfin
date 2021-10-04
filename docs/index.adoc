@@ -8,9 +8,16 @@ include::commonhead.adoc[]
 * topic
 
 [.notes]
-----
+--
 * Notes here
-----
+--
 
+
+=== Warning
+
+[source,java]
+----
+  door.open();
+----
 
 include::readmore.adoc[]

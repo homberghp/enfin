@@ -35,15 +35,6 @@ simply show the use in the most typical case. Otherwise you couldn't write Hello
 = Test code should be easy to read (understand) and easy to write.
 == assertThat( helloString ).isNotEmpty().contains( "Hello" );
 
-= Read more code
-== a method a day keeps the architect away.
-== Visit code exhibits (good example open source).
-== The naming problem. Good type (class) and method names are a boon to readability.
-== Collect good examples (even home-brewn, if the can withstand the scrutiny) and present them
-to the students to study. Reading a lot makes a  better writer, also for code.
-== Good code is understandable code, by virtue of the names used and the easy to understand constructs.
-== Another reason to avoid code duplication or copy and waste: all that copied code has to be read too, which is
-both boring and a waste of time.
 
 = bad examples
 == building sql queries with string concatenation.
