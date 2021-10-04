@@ -40,7 +40,8 @@ like updating multiple tables, computing intermediate values etc
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Example JSON cont'd
 
-* Role of middle-ware is then a short-circuit between db and front-end layers.
+* Role of middle-ware is then a +
+ [green]#short-circuit# between db and front-end layers.
 
 [.notes]
 --
@@ -88,7 +89,12 @@ with inp as (
   )
   -- final update to customer credit
   update customers set credit=credit-(select reservation_cost from makeres) where customer_id=(select customer_id  from inp)
-       returning *
+       returning *;
 ----
 
-The above is the whole use case in one transaction.
+The above is the whole use case in 1 SQL statement.
+
+[.notes]
+--
+* Proof: count the semicolons.
+--

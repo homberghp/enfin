@@ -44,7 +44,9 @@ In particular with rules.
 === Enforcing Rules made easy
 
 * Set the environment such that breaking rules is near impossible.
-** _Eine Prüfung ohne Aufsicht is keine_
+
+[quote, Pieter van den Hombergh]
+Eine Prüfung ohne Aufsicht is keine
 
 [.notes]
 --

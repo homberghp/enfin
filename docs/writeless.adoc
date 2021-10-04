@@ -10,11 +10,11 @@ What is not written can't be wrong.
 
 * Have I done it before?
 * Its there some(one|thing) that can do it for you?
-* Is there a function in the lib that can do it?
+* Is there a function in the library that can do it?
 
 [.notes]
 --
-* Sit on your hands, anyone?
+* Remember sit on your hands, anyone?
 * The less you write the less you err.
 * Always be critical.
 * A by-the-book solution might not be the best for your case.
@@ -25,11 +25,11 @@ What is not written can't be wrong.
 === Model right
 
 * Use the proper modeling tool/technique.
-* A model leaves out some details to reveal others.
+* A model leaves out some details to reveal other.
 
 [.notes]
 --
-* modeling should be used to discover things, not for the models sake.
+* modeling should be used to discover things, not for the modeling sake.
 * Choosing the proper diagram or paradigm is hard, but necessary.
 --
 
@@ -39,16 +39,17 @@ What is not written can't be wrong.
 
 * In many applications [green]*one* data model +
  (the ER-model) suffices.
-* Making a object model (e.g. POJO) is often superfluous, +
-  and only adds complexity and work.
-* Modeling inheritance in entities is [red]*useless*, because it will [red]*not survive the transformations*.
-* Use composition a.k.a. views to get the data fit for a use case.
+* Duplicating this into an object model (e.g. POJO) is superfluous.
+* Modeling inheritance in domain entities is [red]*useless*
+* Use composition a.k.a. [green]#views# to get the data fit for a use case.
 
 [.notes]
 --
 * Do not make both a ERD/database model and a object model.
 * Use one source of truth. Most of the time start with the data (sausage).
-* Useless transformations have no business value, but only cost, if not programmers work then cpu cycles = energy.
+* Double models only adds complexity and work.
+* Useless transformations in a layered architecture have no business value, but only cost, if not programmers work then cpu cycles = energy.
+* Inheritance it will [red]*not survive transit*.
 * The other layer may very well not support classes (JSON, sql) and inheritance. In those layers it is just data. Do not make more of it.
 --
 
@@ -58,12 +59,14 @@ What is not written can't be wrong.
 === Model the machine instead
 
 * Put the modeling effort in the machine.
-* In many cases the machine can be designed using well known patterns.
+* In many cases the machine can be designed using +
+  [blue]*well known patterns*.
 * Actually all frameworks are chock-full of patterns.
+* Libraries can provide many of the machine parts.
 
 [.notes]
 --
-* Effort can be focus on identifying the opportunities for patterns +
+* Effort can be focus on identifying the opportunities for patterns (GoF, Others) +
  Or Non Functional requirements like test-ability. (Layered design).
 --
 
