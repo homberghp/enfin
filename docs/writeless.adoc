@@ -35,11 +35,13 @@ What is not written can't be wrong.
 
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in fade-out"]
-=== Do not [red]*over model*
+=== Do not [red]*over* *model*
 
-* In many applications [green]*one* data model (the ER-model) suffices.
-* Making a object model (e.g. POJO) is often superfluous, and only adds complexity and work.
-* Modeling inheritance is [red]*useless*, because it will [red]*not survive the transformations*.
+* In many applications [green]*one* data model +
+ (the ER-model) suffices.
+* Making a object model (e.g. POJO) is often superfluous, +
+  and only adds complexity and work.
+* Modeling inheritance in entities is [red]*useless*, because it will [red]*not survive the transformations*.
 * Use composition a.k.a. views to get the data fit for a use case.
 
 [.notes]

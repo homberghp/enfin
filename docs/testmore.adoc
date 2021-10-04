@@ -2,12 +2,14 @@
 == Test More
 
 * Testing is not a cost but an investment.
-* By working TDD style you typically have to write less code.
+* By working TDD style you typically write less code.
+
 
 [.notes]
 --
 * Studies have shown that after some decrease at the beginning, +
   testing actually increases programmers productivity.
+* In coding, _less is more_.
 --
 
 [.decentlightbg,background-video="videos/fog-hands.mp4",background-video-loop="true",background-opacity="0.6"]
