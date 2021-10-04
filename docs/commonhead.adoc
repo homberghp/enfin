@@ -12,7 +12,7 @@
 // :title-slide-background-video-loop: true
 // :title-slide-background-video-muted: true
 // :title-slide-autoslide: 30
-:data-background-video: videos/sky.mp4
+:data-background-video: videos/blue-sky.mp4
 :data-background-video-loop: true
 :data-background-video-muted: true
 :revealjs_fragmentInURL: true

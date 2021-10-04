@@ -1,10 +1,10 @@
-[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 == Write less
 
 [quote]
 What is not written can't be wrong.
 
-[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in"]
 === Think before type
 
@@ -20,7 +20,7 @@ What is not written can't be wrong.
 * A by-the-book solution might not be the best for your case.
 --
 
-[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in fade-out"]
 === Model right
 
@@ -33,7 +33,7 @@ What is not written can't be wrong.
 * Choosing the proper diagram or paradigm is hard, but necessary.
 --
 
-[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in fade-out"]
 === Do not [red]*over model*
 
@@ -51,7 +51,7 @@ What is not written can't be wrong.
 --
 
 
-[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in fade-out"]
 === Model the machine instead
 
@@ -65,7 +65,7 @@ What is not written can't be wrong.
  Or Non Functional requirements like test-ability. (Layered design).
 --
 
-[.lightbg,background-video="videos/sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in fade-out"]
 === Advise from the industry
 
