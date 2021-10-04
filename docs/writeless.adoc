@@ -30,15 +30,16 @@ What is not written can't be wrong.
 * Choosing the proper diagram or paradigm is hard, but necessary.
 --
 
-=== Do not over model
+=== Do not [red]*over model*
 
 * In many applications a data model (ERD) suffices.
 * Making a object model (e.g. POJO) is often superfluous, and only adds complexity and work.
-* Modeling inheritance is useless, because it will not survive the transformations
+* Modeling inheritance is [red]*useless*, because it will [red]*not survive the transformations*.
 
 [.notes]
 --
 * Do not make both a ERD/database model and a object model.
 * Use one source of truth. Most of the time start with the data (sausage).
 * Useless transformations have no business value, but only cost, if not programmers work then cpu cycles = energy.
+* The other layer may very well not support classes (JSON, sql) and inheritance. In those layers it is just data. Do not make more of it.
 --

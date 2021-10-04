@@ -12,13 +12,21 @@
 
 === Good Code
 
+* Writing the whole application in Java is not the holy grail.
+** Writing less code is.
 
+[.notes]
+--
+* Good software engineering leads to less code, not more.
+* Choosing the right place to solve a problem helps a lot.
+* You need to know your paradigms and
+--
 
 === Example JSON
 
 * The database can produce a JSON result, if nicely asked.
 * The database can also accept JSON.
-* avoid useless transformations.
+* This avoid useless transformations.
 
 [.notes]
 --
@@ -39,9 +47,36 @@ useless transformations, e.g. from db to pojo to json if the database can do jso
 
 === Benefits of reduced work
 
-* if a lot is done in the database layer, choosing another language for middle-ware of front-end becomes trivial.
+* If a lot is done in the database layer, choosing another language for middle-ware of front-end becomes trivial.
 
 [.notes]
 --
-* The smaller a component, the easier it is to replace.
+* The smaller a component, the easier replaced.
 --
+
+// === Delegating example
+//
+// .sql statement taking 4 parameters
+// [source,sql]
+// ----
+// with inp as (
+//          select ?::date start_reservation,?::date end_reservation, ?::integer as item_id, ?::integer as customer_id
+//      ),
+//      validres as (
+//          select start_reservation cstart_reservation, greatest(start_reservation+1,end_reservation) cend_reservation
+//           from inp
+//      ),
+//      cost as (
+//           select item_cost_per_day*(cend_reservation - cstart_reservation) rcost
+//           from validres,rental_items join inp on (inp.item_id=rental_items.item_id)
+//      ),
+//      makeres as (
+//           insert into reservations (during, item_id, for_customer,reservation_cost)
+//           select daterange(cstart_reservation,cend_reservation), item_id, customer_id, rcost
+//           from inp,validres,cost
+//           returning  *
+//   )
+//   -- final update to customer credit
+//   update customers set credit=credit-(select reservation_cost from makeres) where customer_id=(select customer_id  from inp)
+//        returning *
+// ----
