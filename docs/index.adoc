@@ -7,8 +7,8 @@ include::commonhead.adoc[]
 == Agenda
 
 * No surprise here
-* topics: Testing,
-* In general less or more?
+* topics: Studying, Testing, Coding, Rules
+* In general about less or more?
 
 [.notes]
 --
@@ -18,6 +18,7 @@ include::commonhead.adoc[]
 [.lightbg,background-video="videos/relaxing.mp4",background-video-loop="true",background-video-muted="true",background-opacity="1.0"]
 === Warning
 
+.You may find some things equivalent to
 [source,java]
 ----
   door.open();

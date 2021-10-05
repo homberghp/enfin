@@ -17,12 +17,12 @@
 [.decentlightbg,background-video="videos/fog-hands.mp4",background-video-loop="true",background-opacity="0.6"]
 === No Tests, No Progress
 
-* You can't measure progress unless you test.
+* You can't measure progress [green]#unless# you test.
 * A test ensures that a feature is realized.
 
 [.notes]
 --
-Although tests cannot prove the absence of errors,
+Although tests can't prove the absence of errors,
 they can help measure the degree of done.
 --
 

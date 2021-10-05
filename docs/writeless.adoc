@@ -4,7 +4,13 @@
 [quote]
 What is not written can't be wrong.
 
-[.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
+[.notes]
+--
+One of the most surprising ideas for the student is
+that we teach them write less code.
+--
+
+[.lightbg,background-image="images/sit-on-hands.jpg",background-opacity="0.7"]
 [transition="zoom-in"]
 === Think before type
 
@@ -30,17 +36,17 @@ What is not written can't be wrong.
 [.notes]
 --
 * modeling should be used to discover things, not for the modeling sake.
-* Choosing the proper diagram or paradigm is hard, but necessary.
+* Choosing the proper diagram or paradigm can de difficult, but is necessary.
 --
 
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 [transition="zoom-in fade-out"]
-=== Do not [red]*over* *model*
+=== Do not [red]*over* model
 
 * In many applications [green]*one* data model +
  (the ER-model) suffices.
 * Duplicating this into an object model (e.g. POJO) is superfluous.
-* Modeling inheritance in domain entities is [red]*useless*
+* Modeling inheritance in domain entities is just as [red]*useless*.
 * Use composition a.k.a. [green]#views# to get the data fit for a use case.
 
 [.notes]
@@ -48,7 +54,7 @@ What is not written can't be wrong.
 * Do not make both a ERD/database model and a object model.
 * Use one source of truth. Most of the time start with the data (sausage).
 * Double models only adds complexity and work.
-* Useless transformations in a layered architecture have no business value, but only cost, if not programmers work then cpu cycles = energy.
+* Useless transformations in a layered architecture have no (business) value, only cost. Not only programming work but also CPU cycles (energy).
 * Inheritance it will [red]*not survive transit*.
 * The other layer may very well not support classes (JSON, sql) and inheritance. In those layers it is just data. Do not make more of it.
 --
@@ -62,7 +68,7 @@ What is not written can't be wrong.
 * In many cases the machine can be designed using +
   [blue]*well known patterns*.
 * Actually all frameworks are chock-full of patterns.
-* Libraries can provide many of the machine parts.
+* Through patterns, libraries can provide many of the machine parts.
 
 [.notes]
 --
@@ -85,5 +91,7 @@ Elon Musk.
 
 [.notes]
 --
-Use every opportunity to remove code.
+Musk: Do it in this order. It is a pity to throw a part that has been optimized away.
+
+Hom's translation: Use every opportunity to remove code. What's not there does not have to be maintained.
 --

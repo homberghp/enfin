@@ -40,8 +40,8 @@ like updating multiple tables, computing intermediate values etc
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Example JSON cont'd
 
-* Role of middle-ware is then a +
- [green]#short-circuit# between db and front-end layers.
+* Role of middle-ware is then a [green]#short-circuit# +
+  between db and front-end layers.
 
 [.notes]
 --
@@ -53,13 +53,14 @@ like updating multiple tables, computing intermediate values etc
 [.lightbg,background-video="videos/blue-sky.mp4",background-video-loop="true",background-opacity="0.7"]
 === Benefits of reduced work
 
-If most work is done in the e.g. the database layer, +
-choosing another language for middle-ware or front-end +
-becomes trivial.
+* If most work is done in the e.g. the database layer, +
+implementing for another language/platform/... for middle-ware or front-end +
+becomes [green]*trivial*.
 
 [.notes]
 --
 * The smaller a component, the easier replaced.
+* Best is to not need it of course.
 * Most database functionality can be written in a declarative style (sql),
   with lots of opportunities to optimize.
 --

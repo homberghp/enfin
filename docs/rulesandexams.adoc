@@ -1,20 +1,31 @@
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
 == Rules & Exams
 
-*A diploma is a document of trust*
+A diploma is a document of [green]*trust*
 
+[quote, common phrase]
 *Trust comes on foot, but leaves on horseback*
 
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
 === Less is More
 
-In particular with rules.
+Also with rules.
+
+[.notes]
+--
+* Not only code should be less and less complex.
+--
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
 === Rules
 
-* Rules should have a simple rationale.
+* Rules should have a [green]*simple* rationale.
+
+[.notes]
+--
+A rationale is not an emotion, so like or not like is not involved.
+--
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
 === Best Practices
@@ -22,14 +33,16 @@ In particular with rules.
 * *Best Practices* are not _RULES_.
 * Best practices do not have to be enforced, just advised.
 * Best practices favor everyone and harm no-one.
-* Not following best practices is stupid, and has no benefit.
-* Example: Politeness is a best practice. So is homework.
+* Not following best practices is [red]#stupid#, and has no benefit.
+* Example: Politeness is a best practice. +
+  [green]#So is doing your homework#.
 
 [.notes]
 --
-. Teacher, behave like a sports trainer
-. A (personal) trainer or teacher does not have to soft
-. Making homework is like training. If you don't you won't play.
+. Teacher, behave like a sports trainer.
+. A (personal) trainer or teacher does not have to be soft, that helps no-one.
+. Students are more robust than you think.
+. Making homework is like training. If you don't, you won't play.
 --
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
@@ -45,8 +58,8 @@ In particular with rules.
 
 * Set the environment such that breaking rules is near impossible.
 
-[quote, Pieter van den Hombergh]
-Eine Prüfung ohne Aufsicht is keine
+[quote]
+Eine Prüfung ohne Aufsicht ist keine.
 
 [.notes]
 --
@@ -82,6 +95,7 @@ Eine Prüfung ohne Aufsicht is keine
 * They can be maintained.
 * It levels the playing field.
 * And avoids privacy issues.
+* This is what professional exam sites do (cbs, cambridge).
 --
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
@@ -91,7 +105,7 @@ Exams are very expensive.
 
 * Make Producing and taking exams [green]*cheap* +
  so you can take them out of the normal cycle.
-* take an exam when a main topic is complete.
+* Take an exam when a main topic is complete.
 * More frequent exams increase study efficiency.
 
 [.notes]

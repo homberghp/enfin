@@ -27,7 +27,7 @@ Teaching is like crossing a river, going from the known to the unknown using wob
 
 * Beware of [red]**over**[green]**simplification**.
 * Avoid examples that must be [red]**un**learned.
-* If some configurations cannot be understood yet, [green]_provide them_.
+* If some configurations can't be understood yet, [green]_provide them_.
 * [strike red]*Students* [green]*Everyone* should learn to never share passwords.
 
 [.notes]
@@ -40,20 +40,20 @@ and password without having it in the source code.
 --
 
 [.lightbg,background-video="videos/river.mp4",background-video-loop="true",background-opacity="0.7"]
-=== Bad example, DB config
+=== [red]#Bad# example, DB config
 
-* Using dbadmin (postgres) as the +
+* Using dbadmin (postgres, root, dba, sys) as the +
 username in an application.
-* Put the/a db-username and -password +
+* Putting the/a db-username and -password +
  in the source code of an application.
 
 [.lightbg,background-video="videos/river.mp4",background-video-loop="true",background-opacity="0.7"]
-=== Admin user [red]*Bad*, why?
+=== Admin [red]*Bad*, why?
 
 * With a typical database you introduce 3 problems:
 . The source is in a repository, potentially leaking passwords.
 . The admin user has too much power, can do everything.
-. Using the admin user makes database rights (`GRANT`, `REVOKE`) +
+. Using the admin user makes database rights ([blue]#GRANT#, [blue]#REVOKE#) +
   [red]*completely ineffective* +
  because the admin user is [red]*not* subject to [blue]*access rights*.
 
@@ -65,12 +65,12 @@ username in an application.
 --
 
 [.lightbg,background-video="videos/river.mp4",background-video-loop="true",background-opacity="0.7"]
-=== Good example
+=== [green]#Good# example
 
-* Provide docker and docker compose configurations +
+* Provide [blue]#docker# *and* [blue]#docker-compose# configurations +
  that do security settings right.
-* E.g. use a simple `.env` file that is not committed to git +
-  and can keep sensitive info.
+* E.g. use a simple [blue]`.env` file that is [red]#not# committed to git. +
+  This can keep sensitive info secret.
 * Provide a script that can create the initial users, +
   with the appropriate rights.
 
