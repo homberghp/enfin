@@ -471,6 +471,7 @@ span.green{ color:#080;}
 .green{color:#080;}
 .blue{color:#00A;}
 .white{color:#FFF;}
+.big{font-size: 120%;}
 h2 { letter-spacing: .5rem;}
 .small-code-font { font-size: 60%; }
 .strike { text-decoration: line-through;}

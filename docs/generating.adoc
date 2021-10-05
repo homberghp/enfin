@@ -24,8 +24,9 @@
 
 [.notes]
 --
-* If delegation of the work does not apply, how about delegating your coding work to a generator.
-* Generators are trivial to write.
+* If delegation of the work does not apply, +
+  how about delegating your coding work to a generator.
+* Generators for **DTO**s  are trivial to write.
 * Show a trivial example in Java(records) and sql.
 --
 
@@ -36,24 +37,26 @@
 ----
 CREATE TABLE employees (
        employeeid serial primary key,
-       lastname text,
-       firstname text,
+       lastname text not null,
+       firstname text not null,
        email text unique not null,
        departmentid integer references departments,
-       available boolean,
-       dob date not null default now(),
+       available boolean default true,
+       dob date not null,
        hiredate date not null default now()
-) WITHOUT oids;
+);
 ----
 
 
-=== equivalent java record, this is trivial to generate.
+=== Equivalent java record, this is trivial to generate.
 [source,java]
 ----
 record Employee( Integer employeeid, String lastName) {
   // no body
 }
 ----
+
+That is all *DTO* code required.
 
 [.notes]
 --

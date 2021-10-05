@@ -2,27 +2,9 @@
 = Enfin
 include::commonhead.adoc[]
 
+*My Last Lecture*
 
-[.lightbg,background-video="videos/relaxing.mp4",background-video-loop="true",background-video-muted="true",background-opacity="0.8"]
-== Agenda
-
-* No surprise here
-* topics: Studying, Testing, Coding, Rules
-* In general about less or more?
-
-[.notes]
---
-* Notes here
---
-
-[.lightbg,background-video="videos/relaxing.mp4",background-video-loop="true",background-video-muted="true",background-opacity="1.0"]
-=== Warning
-
-.You may find some things equivalent to
-[source,java]
-----
-  door.open();
-----
+include::intro.adoc[]
 
 include::readmore.adoc[]
 

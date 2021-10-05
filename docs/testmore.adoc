@@ -2,13 +2,14 @@
 == Test More
 
 * Testing is not a [red]*cost* but an [green]*investment*.
-* By working TDD style you typically write less code.
-* You also reduce risk in the future.
-* No test is a serious technical debt.
+* By working TDD style you typically write [green]#less# code.
+* Writing tests can help [green]#reveal inconsistencies# in requirements.
+* You [green]#reduce risk# in the future.
+* Having [red]#to few# tests produces a serious [red]#technical debt#.
 
 [.notes]
 --
-* Studies have shown that after some decrease at the beginning, +
+* Studies have shown that, after some decrease at the beginning, +
   testing actually increases programmers productivity.
 * In coding, _less is more_.
 * Automated tests and regressions.

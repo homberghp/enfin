@@ -103,7 +103,7 @@ Eine Prüfung ohne Aufsicht ist keine.
 
 Exams are very expensive.
 
-* Make Producing and taking exams [green]*cheap* +
+* [blue]#Make# producing and taking exams [green]*cheap* +
  so you can take them out of the normal cycle.
 * Take an exam when a main topic is complete.
 * More frequent exams increase study efficiency.
