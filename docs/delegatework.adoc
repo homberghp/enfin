@@ -30,16 +30,17 @@ like updating multiple tables, computing intermediate values etc
 * The database can produce a JSON result, if nicely asked.
 * The database can also accept JSON.
 * This helps avoid useless transformations +
-  between JSON, POJO, and JSON.
+  between Database, POJO (Java), and JSON.
 * In this analogy, [blue]#JSON# is the [blue]#Carb#, +
   [red]#POJO# is the [red]#Panko#, +
-  and [green]#Database JSON# is the [green]#Porridge#
+  and [green]#Database JSON# is the [green]#Porridge#, +
+  so just forward the Porridge.
 
 [.notes]
 --
-* Panko is the Pojo. Takes a lot of time and energy, where the database output can sufficient.
-* Many database can produce and process json from and to table form.
-* In a rest application, that avoids object to json on json to object transformations.
+* Pojos are the Panke here. Takes a lot of time and energy, where the database output can sufficient.
+* Many database can produce and process JSON from and to table form.
+* In a rest application, that avoids object to JSON on JSON to object transformations.
 * To the extreme: https://postgrest.org/en/v8.0/[PostgREST ^]
 --
 
