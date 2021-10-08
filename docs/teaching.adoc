@@ -1,7 +1,7 @@
 [.lightbg,background-video="videos/river.mp4",background-video-loop="true",background-opacity="0.7"]
 == Teaching & Learning
 
-Teaching is like crossing a river, going from the known to the unknown using wobbly foot rests.
+Learning is like crossing a river, going from the known to the unknown using wobbly foot rests.
 
 [.notes]
 --

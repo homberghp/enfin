@@ -6,6 +6,11 @@ A diploma is a document of [green]*trust*
 [quote, common phrase]
 *Trust comes on foot, but leaves on horseback*
 
+[.notes]
+--
+* let's talk about (y)our work, as educators.
+* Teaching w've done, rules and exams.
+--
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
 === Less is More
@@ -18,13 +23,13 @@ Also with rules.
 --
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
-=== Rules
+=== Quality Rules
 
-* Rules should have a [green]*simple* rationale.
+* Quality Rules have a [green]*simple* rationale.
 
 [.notes]
 --
-A rationale is not an emotion, so like or not like is not involved.
+* A rationale is not an emotion, or a dogma, so like or not like is not involved.
 --
 
 [.lightbg,background-image="images/fontys-campus-vijver-boom.jpg", background-opacity="0.6"]
@@ -33,7 +38,7 @@ A rationale is not an emotion, so like or not like is not involved.
 * *Best Practices* are not _RULES_.
 * Best practices do not have to be enforced, just advised.
 * Best practices favor everyone and harm no-one.
-* Not following best practices is [red]#stupid#, and has no benefit.
+* Not following best practices is [big red]*stupid*, and has no benefit.
 * Example: Politeness is a best practice. +
   [green]#So is doing your homework#.
 
