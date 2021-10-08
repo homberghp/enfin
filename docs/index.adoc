@@ -4,6 +4,12 @@ include::commonhead.adoc[]
 
 *My Last Lecture*
 
+[.notes]
+--
+Welcome friends, colleagues, and family.
+And students of course.
+--
+
 include::intro.adoc[]
 
 include::readmore.adoc[]
